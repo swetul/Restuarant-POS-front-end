@@ -53,9 +53,21 @@
 		}
 
 		body{
+			margin: 0 0 0 0;
+			border: 2px solid black;
 			background-image: url('pageBack.jpg');
 			background-repeat: repeat;
+			height: calc(100vh - 4px);
 		}
+
+		@media screen and (min-width: 768px) {
+				    body {
+				    	margin-left: auto;
+				    	margin-right: auto;
+					width: 768px;
+				    }
+		}
+
 		h1{
 			text-align: center;
 			padding: 20px 50px;
@@ -75,6 +87,7 @@
 			text-decoration: red underline overline wavy;
 		}
 	</style>
+	<meta name="viewport" content="height=device-height; width=device-width; initial-scale=1; maximum-scale=1; user-scalable=no">
 
 </head>
 <body>
@@ -82,7 +95,7 @@
 <h1> RESTUARANT NAME HERE </h1>
 
 <br><br><br>
-<form action="MenuPanel.html" alt = "TablesPanel.html">
+<form action="MenuPanel.html">
   <p id = "log">Emp ID</p>
   <input type="text" name="user Name" value="XXXXXX">
   <br>

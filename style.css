@@ -168,9 +168,10 @@ body {
 
 #addtablepanel {
 	border: 2px solid black;
-	margin: calc(10% - 4px);
-	width: 90%;
-	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	width: calc(80% - 4px);
+	height: 200px;
 }
 
 #panels #rightpanel {

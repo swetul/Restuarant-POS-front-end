@@ -7,14 +7,13 @@ body {
     	margin-left: auto;
     	margin-right: auto;
 	width: 768px;
-	background-image:url('pageBack.jpg');
     }
 }
 
 #information ul {
 	list-style: none;
 	border: 2px solid black;
-	background: transparent;
+	background: #eee;
 	height: calc(5vh - 4px);
 	width: 100%;
 	padding: 0;
@@ -54,7 +53,7 @@ body {
 #functions ul {
 	list-style: none;
 	border: 2px solid black;
-	background: transparent;
+	background: #999;
 	height: calc(10vh - 4px);
 	width: 100%;
 	padding: 0;
@@ -72,7 +71,7 @@ body {
 #functions a {
 	text-decoration: none;
 	display: block;
-	background: transparent;
+	background: #eee;
 	padding: 0 1em;
 	color: #00c;
 	text-align: center;
@@ -90,14 +89,14 @@ body {
 
 #functions #selected a {
 	position: relative;
-	background: transparent;
+	background: white;
 	color: black;
 	font-weight: bold;
 }
 
 #panels ul {
 	list-style: none;
-	border: 3px solid black;
+	border: 2px solid black;
 	height: calc(85vh - 4px);
 	width: 100%;
 	padding: 0;
@@ -106,7 +105,7 @@ body {
 
 #panels #leftpanel {
 	float: left;
-	border: 3px solid black;
+	border: 2px solid black;
 	margin: 0;
 	width: calc(15% - 4px);
 	height: calc(100% - 4px);
@@ -118,7 +117,7 @@ body {
 }
 
 #panels #leftpanel #activetables li {
-	border: 3px solid black;
+	border: 2px solid black;
 	border-radius: 50%;
 	margin-left: auto;
 	margin-right: auto;
@@ -141,7 +140,7 @@ body {
 
 #panels #middlepanel {
 	float: left;
-	border: 3px solid black;
+	border: 2px solid black;
 	margin: 0;
 	width: calc(60% - 4px);
 	height: calc(100% - 4px);
@@ -155,7 +154,7 @@ body {
 }
 
 .wrapper > div {
-	border: 3px solid black;
+	border: 2px solid black;
 	border-radius: 50%;
 	background-color: #eee;
 	margin: 1em;
@@ -167,10 +166,18 @@ body {
 	background: #ddf;
 }
 
+#addtablepanel {
+	border: 2px solid black;
+	margin-left: auto;
+	margin-right: auto;
+	width: calc(80% - 4px);
+	height: 200px;
+}
+
 #panels #rightpanel {
 	float: left;
-	border: 3px solid black;
-	background: transparent;
+	border: 2px solid black;
+	background: #eee;
 	margin: 0;
 	width: calc(25% - 4px);
 	height: calc(100% - 4px);

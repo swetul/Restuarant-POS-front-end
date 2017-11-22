@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> LogIn Page</title>
+	<style>
+	ul{
+	background-color: white;
+	padding: 0px 20px;
+	font-weight: bold;
+	}
+	body {
+		background-image: url(theme1.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.baseInfo{
+		overflow: hidden;
+	}
+	.baseInfo ul{
+		float :left;
+		display: block;
+		color: black;
+		font-size: 20px;
+		text-align: center;
+		padding : 0px 200px;
+		text-decoration: none;
+	}
+	.heading{
+		text-align : center;
+		font-family : arial;
+		color : white;
+		font-size: 20px;
+	}
+	.navigation{
+		overflow: hidden;
+		text-align: center;
+		}
+	.navigation a{
+		float :left;
+		display: block;
+		color: black;
+		font-size: 20px;
+		text-align: center;
+		padding : 0px 100px;
+		text-decoration: none;
+	}
+	.navigation a:hover{
+		background-color : white;
+		padding : 0px 100px;
+		
+	}
+	
+		
+	</style>
+	
+</head>
+<body>
+
+
+<div class = "heading">
+<h1> Restuarant Italiano </h1>
+</div>
+<div class= "baseInfo">
+<ul>Date/Time: <span id = "datetime"></span></ul> 
+<ul> #65 Matt k.</ul>
+<ul> Order #12345</ul>
+</div>
+<script>
+		var date = new Date();
+		document.getElementById("datetime").innerHTML = date.toLocaleDateString();
+	</script>
+
+<div class = "navigation"> 
+<a href = "#"><ul>Tables</ul></a>
+<a href = "#"><ul>Menu</ul></a>
+<a href = "#"><ul>Payments</ul></a>
+<a href = "#"><ul>Order Queue</ul></a>
+</div>
+
+<div class = "TablePanel">
+<h4> Table #6 <h4>
+<p>----------------</p>
+<p>Coca-cola</p>
+<p>calamari</p>
+<p> Filet Mignon</p>
+<p>----------------</p>
+<p> Total	$32.48</p>
+
+</div>
+
+
+</body>
+
+
+
+</html>

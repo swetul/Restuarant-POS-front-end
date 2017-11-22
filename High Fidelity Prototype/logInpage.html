@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> LogIn Page</title>
+	<style>
+		#log{
+			font-weight: bolder;
+			font-size: 25px;
+			line-height: 0px;
+		}
+		p{
+			font-weight: bold;
+			font-size: 20px;
+			line-height: 5px;
+		}
+		input[type="text"] {
+			font-weight: bold;
+    		background-color: transparent;
+  	 		background-image: url('user.png');
+   			background-position: 10px 6px;
+    		background-repeat: no-repeat;
+		    padding-top: 10px;
+		    padding-bottom: 10px;
+		    padding-left: 40px;
+		    border: 2px solid black;
+		}
+		input[type="password"] {
+			font-weight: bold;
+    		background-color: transparent;
+  	 		background-image: url('key.png');
+   			background-position: 5px 3px;
+    		background-repeat: no-repeat;
+    		padding-top: 10px;
+    		padding-bottom: 10px;
+		    padding-left: 40px;
+		    border: 2px solid black;
+		}
+		input[type = "submit"]{
+			padding: 10px 30px;
+			font-weight: bolder;
+			background-image: url(lock.png);
+			background-position: 0px 0px;
+			background-repeat: no-repeat;
+			border:2px solid black;
+		}
+		input[type = "submit"]:hover{
+			padding: 10px 30px;
+			font-weight: bolder;
+			background-image: url(unlock.png);
+			background-position: 0px 0px;
+			background-repeat: no-repeat;
+			border:2px solid black;
+		}
+
+		body{
+			background-image: url('pageBack.jpg');
+			background-repeat: repeat;
+		}
+		h1{
+			text-align: center;
+			padding: 20px 50px;
+			text-decoration: none;
+			font-family: Comic sans ms;
+			font-size: 40px
+		}
+		form{
+
+			text-align: center;
+			padding-top: 100px;
+		}
+		a:hover {
+			color: white;
+			background-color: transparent;
+			font-size: 20px;
+			text-decoration: red underline overline wavy;
+		}
+	</style>
+
+</head>
+<body>
+
+<h1> RESTUARANT NAME HERE </h1>
+
+<br><br><br>
+<form action="MenuPanel.html" alt = "TablesPanel.html">
+  <p id = "log">Emp ID</p>
+  <input type="text" name="user Name" value="XXXXXX">
+  <br>
+  <p id = "log">Password</p>
+  <input type="password" name="lastname" value="********">
+  <br><br>
+  <a href = "#">Forgot Password? </a><br><br>
+  <input type="submit" value="LOG IN">
+  <br>
+</form>
+<br><br>
+<p id = "log">HOURS OF SERVICE</p>
+<p>Monday 	: CLOSED</p>
+<p>Tues-Fri : 11AM - 11PM</p>
+<p>Saturday : 11AM - 10PM</p>
+<p>Sunday	: 11AM - 9PM</p>
+
+<br><br>
+<p>All Rights Reserved. Telephone - (204)-xxx-xxxx / (431)-xxx-xxxx, 1670 Greenway Street, Winnipeg, R3X X7X , MB. </p>
+</body>
+</html>

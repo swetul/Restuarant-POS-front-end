@@ -296,7 +296,7 @@ p {
  	padding: 12px;
 }
 
-input {
+#listofitems input {
 	float: right;
 	padding: 5px;
 	width: 10%;

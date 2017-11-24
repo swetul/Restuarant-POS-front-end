@@ -1,29 +1,251 @@
 body {
+	position: relative;
 	margin: 0 0 0 0;
+	border: 2px solid black;
+	background-image: url('pageBack.jpg');
+	background-repeat: repeat;
+	height: calc(100vh - 4px);
 }
 
 @media screen and (min-width: 768px) {
     body {
     	margin-left: auto;
     	margin-right: auto;
-	width: 768px;
+		width: 768px;
     }
 }
+
+/*Login Page css begins*/
+#log {
+	font-weight: bolder;
+	font-size: 25px;
+	line-height: 0px;
+}
+
+p {
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 5px;
+}
+
+input[type="text"] {
+	font-weight: bold;
+	background-color: transparent;
+	background-image: url('user.png');
+	background-position: 10px 6px;
+	background-repeat: no-repeat;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 40px;
+	border: 2px solid black;
+}
+
+input[type="password"] {
+	font-weight: bold;
+	background-color: transparent;
+	background-image: url('key.png');
+	background-position: 5px 3px;
+	background-repeat: no-repeat;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 40px;
+	border: 2px solid black;
+}
+
+input[type = "submit"] {
+	padding: 10px 30px;
+	font-weight: bolder;
+	background-image: url(lock.png);
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	border:2px solid black;
+}
+
+input[type = "submit"]:hover {
+	padding: 10px 30px;
+	font-weight: bolder;
+	background-image: url(unlock.png);
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	border:2px solid black;
+}
+
+h1 {
+	text-align: center;
+	padding: 20px 50px;
+	text-decoration: none;
+	font-family: Comic sans ms;
+	font-size: 40px
+}
+
+form {
+	text-align: center;
+	padding-top: 100px;
+}
+
+#loginPanel p {
+	display: block;
+	margin: 2%;
+}
+
+#loginPanel a {
+	display: block;
+	margin: 2%;
+	height: 50px;
+	line-height: 50px;
+}
+
+#loginPanel a:hover {
+	color: white;
+	background-color: transparent;
+	font-size: 20px;
+	text-decoration: red underline overline wavy;
+}
+
+#hoursofservice {
+	margin: 10%;
+}
+
+#hoursofservice p {
+	text-align: center;
+}
+
+#contactInfo {
+	position: absolute;
+	bottom: 10px;
+	left: 20px;
+}
+/*Login Page css ends*/
+
+/*swetul css begins*/
+#Tender a {
+	text-decoration: none;
+	display: block;
+	background-color: transparent;
+}
+
+#Tender a:hover {
+	background: #ddf;
+}
+
+#panels #middlepanel h2 {
+	font-weight: bolder;
+	text-align: center;
+	text-decoration: underline;
+}
+
+#panels #middlepanel ul {
+	list-style: none;
+	border: none;
+	height: 25px;
+	width: 100%;
+	margin: 0 0 0 0;
+	/*background: rgba(255, 0, 0, 0.5);*/
+}
+
+#panels #middlepanel li {
+	float: left;
+	height: 1em;
+	width: calc(50% - 4px);
+	margin: 0 0 0 0;
+}
+
+#panels #middlepanel #payText {
+	text-align: left;
+	margin-left: 20px;
+}
+
+#panels #middlepanel #Tablepay {
+	text-align: right;
+	margin-right: 20px;
+}
+
+#hr {
+	margin: 25px;
+	border: 1px solid black;
+}
+
+#panels #middlepanel #subtotals {
+	margin-top: 20px;
+	margin-right: 20px;
+	text-align: right;
+	font-weight: bolder;
+}
+
+#panels #middlepanel #total {
+	margin-top: 20px;
+	margin-right: 20px;
+	text-align: right;
+	font-weight: bolder;
+}
+
+#panels #middlepanel button {
+	margin-left: 20px;
+}
+
+#panels #rightpanel #Divide ul {
+	border: none;
+	height: calc(100% - 4px);
+	margin-left: auto;
+	margin-right: auto;
+}
+#panels #rightpanel #Divide li {
+	border: 3px solid black;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: 15%;
+	margin-bottom: 15%;
+
+}
+
+#panels #rightpanel #Divide li {
+	border: none;
+}
+
+#panels #rightpanel #Divide #disp {
+	height: 100px;
+	line-height: 1.5em;
+}
+
+#panels #rightpanel #Divide #printHere {
+	height: 150px;
+	line-height: 1.5em;
+}
+
+#panels #rightpanel #Divide #hr {
+	border: 1px solid black;
+}
+
+#panels #rightpanel #Divide a {
+	border: 2px solid black;
+	text-decoration: none;
+	display: block;
+	background: rgba(255, 255, 255, 0.5);
+	text-align: center;
+}
+#panels #rightpanel #Divide a:hover {
+	background-color: #ddf;
+
+}
+#panels #rightpanel #Divide a:active {
+	background-color: white;
+}
+/* swetul css ends*/
 
 #information ul {
 	list-style: none;
 	border: 2px solid black;
-	background: #eee;
-	height: calc(5vh - 4px);
-	width: 100%;
+	background: rgba(150, 150, 150, 0.25);
+	height: calc(5vh - 6px);
+	width: calc(100% - 4px);
 	padding: 0;
-	margin: 0;
+	margin: 0 0 0 0;
 }
 
 #information li {
 	float: left;
 	border: none;
-	margin: 0;
+	margin: 0 0 0 0;
 	width: calc(33.3% - 4px);
 	height: calc(100% - 4px);
 }
@@ -53,17 +275,20 @@ body {
 #functions ul {
 	list-style: none;
 	border: 2px solid black;
-	background: #999;
+	background: transparent;
 	height: calc(10vh - 4px);
-	width: 100%;
+	width: calc(100% - 4px);
 	padding: 0;
-	margin: 0;
+	margin: 0 0 0 0;
 }
 
 #functions li {
 	float: left;
 	border: 2px solid black;
 	margin: 0;
+	padding-left: 0px;
+	padding-right: 0px;
+	/*padding: 2px;*/
 	width: calc(20% - 4px);
 	height: calc(100% - 4px);
 }
@@ -71,11 +296,11 @@ body {
 #functions a {
 	text-decoration: none;
 	display: block;
-	background: #eee;
-	padding: 0 1em;
-	color: #00c;
+	background: rgba(150, 150, 150, 0.5);
+	padding: 0;
+	color: #fff;
 	text-align: center;
-	line-height: calc(10vh - 4px);
+	line-height: calc(10vh - 6px);
 	height: 100%;
 }
 
@@ -89,26 +314,31 @@ body {
 
 #functions #selected a {
 	position: relative;
-	background: white;
+	background: rgba(255, 255, 255, 0.5);
 	color: black;
-	font-weight: bold;
+	font-weight: bolder;
+	font-size: 30px;
 }
 
 #panels ul {
 	list-style: none;
 	border: 2px solid black;
-	height: calc(85vh - 4px);
-	width: 100%;
+	height: calc(85vh - 6px);
+	width: calc(100% - 4px);
 	padding: 0;
-	margin: 0;
+	margin: 0 0 0 0;
 }
 
 #panels #leftpanel {
 	float: left;
 	border: 2px solid black;
-	margin: 0;
+	margin: 0 0 0 0;
 	width: calc(15% - 4px);
 	height: calc(100% - 4px);
+}
+
+#panels #leftpanel h2 {
+	text-align: center;
 }
 
 #panels #leftpanel #activetables ul {
@@ -119,18 +349,19 @@ body {
 #panels #leftpanel #activetables li {
 	border: 2px solid black;
 	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.5);
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 15%;
 	margin-bottom: 15%;
-	width: calc(10vh - 4px);
-	height: calc(10vh - 4px);
-	/*height: calc(10% - 4px);*/
+	width: 75px;
+	height: 75px;
 }
 
 #panels #leftpanel #activetables a {
+	text-decoration: none;
 	display: block;
-	line-height: calc(10vh - 4px);
+	line-height: 75px;
 	text-align: center;
 }
 
@@ -141,24 +372,39 @@ body {
 #panels #middlepanel {
 	float: left;
 	border: 2px solid black;
-	margin: 0;
+	margin: 0 0 0 0;
 	width: calc(60% - 4px);
 	height: calc(100% - 4px);
 }
 
+#panels #middlepanel #newTableTitle {
+	visibility: hidden;
+	margin-left: 20px;
+}
+
+#panels #middlepanel #newTables {
+	visibility: hidden;
+}
+
 .wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
+	display: grid;
+	margin-left: 20px;
+	margin-right: 20px;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 20px;
+	grid-auto-rows: minmax(10%, auto);
 }
 
 .wrapper > div {
 	border: 2px solid black;
 	border-radius: 50%;
-	background-color: #eee;
-	margin: 1em;
-	padding: 1em;
+	background: rgba(255, 255, 255, 0.5);
+	/*background-color: #eee;*/
+	height: 60px;
+	width: 60px;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 60px;
 	text-align: center;
 }
 
@@ -167,18 +413,69 @@ body {
 }
 
 #addtablepanel {
+	visibility: hidden;
 	border: 2px solid black;
 	margin-left: auto;
 	margin-right: auto;
-	width: calc(80% - 4px);
+	margin-top: 2vh;
+	margin-bottom: 2vh;
+	width: calc(90% - 4px);
 	height: 200px;
+}
+
+#addtablepanel h2 {
+	margin-left: 20px;
+}
+
+#addtablepanel ul {
+	list-style: none;
+	border: none;
+	height: 0;
+}
+
+#addtablepanel li {
+	float: left;
+	border: 2px solid black;
+	width: calc(35% - 4px);
+	height: 50px;
+}
+
+#addtablepanel a {
+	text-decoration: none;
+	display: block;
+	line-height: 50px;
+	text-align: center;
+	background: #eee;
+	padding: 0 1em;
+}
+
+#addtablepanel #confirm {
+	margin-left: 10%;
+	margin-right: 5%;
+}
+
+#addtablepanel #confirm a:hover {
+	background: #ddf;
+}
+
+#addtablepanel #cancel {
+	margin-left: 5%;
+	margin-right: 10%;
+}
+
+#addtablepanel #cancel a:hover {
+	background: #ddf;
 }
 
 #panels #rightpanel {
 	float: left;
 	border: 2px solid black;
-	background: #eee;
-	margin: 0;
+	background: transparent;
+	margin: 0 0 0 0;
 	width: calc(25% - 4px);
 	height: calc(100% - 4px);
+}
+
+#panels #rightpanel h2 {
+	text-align: center;
 }

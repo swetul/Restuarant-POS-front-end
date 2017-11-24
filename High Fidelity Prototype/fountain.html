@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Restaurant Ordering</title>
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="height=device-height; width=device-width; initial-scale=1; maximum-scale=1; user-scalable=no">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="plusminus.js"></script>
+
+</head>
+<body>
+	<div id="information">
+		<ul>
+			<li id="date"><a>Date</a></li>
+			<li id="employee"><a>Employee</a></li>
+			<li id="time"><a>Time</a></li>
+		</ul>
+	</div>
+	<div id="functions">
+		<ul>
+			<li><a href="../High Fidelity Prototype/TablesPanel.html">Tables</a></li>
+			<li id="selected"><a href="../High Fidelity Prototype/MenuPanel.html">Menu</a></li>
+			<li><a href="../High Fidelity Prototype/PaymentPanel.html">Payment</a></li>
+			<li><a href="">Progress</a></li>
+			<li><a href="">Login</a></li>
+		</ul>
+	</div>
+		<div id="panels">
+		<ul>
+			<li id="leftpanel">
+			<h2 style="text-align: center;"> Categories</h2>
+				<div class = "menu-Buttons">
+					<form action="special.html">
+					<button class= "NavBar">Specials</a></button>
+					</form>
+					<form action="drinks.html">
+					<button class = "NavBar">Drinks</a></button>
+					</form>
+					<form action="appetizers.html">
+					<button class = "NavBar">Appetizers</a></button>
+					</form>
+					<form action="entrees.html">
+					<button class = "NavBar">Entrees</a></button>
+					</form>
+					<form action="deserts.html">
+					<button class = "NavBar">Deserts</a></button>
+					</form>
+				</div>
+			</li>
+			<li id="middlepanel">
+				<div class="drink-type" id="myTopNav">
+					<a href="fountain.html">Fountain</a>
+					<a href="mixed.html">Mixed</a>
+					<a href="wine.html">Wine</a>
+					<a href="#beer.html">Beer</a>
+				</div>
+				<ul id="listofitems">
+					<h2 style="text-align: center;"> Fountain Drinks</h2>
+					<input type="button" value="+" class="qtyPlus" field="quantity1">
+					<input type="text" name="quantity1" value="0" class="qty">
+					<input type="button" value="-" class="qtyMinus" field="quantity1">
+					<li id="fountain-menu">Coca-Cola</li>
+					<hr>
+					<input type="button" value="+" class="qtyPlus" field="quantity2">
+					<input type="text" name="quantity2" value="0" class="qty">
+					<input type="button" value="-" class="qtyMinus" field="quantity2">
+					<li id="fountain-menu">Sprite</li>
+					<hr>
+					<input type="button" value="+" class="qtyPlus" field="quantity3">
+					<input type="text" name="quantity3" value="0" class="qty">
+					<input type="button" value="-" class="qtyMinus" field="quantity3">
+					<li id="fountain-menu">Fanta</li>
+					<hr>
+					<input type="button" value="+" class="qtyPlus" field="quantity4">
+					<input type="text" name="quantity4" value="0" class="qty">
+					<input type="button" value="-" class="qtyMinus" field="quantity4">
+					<li id="fountain-menu">Dr Pepper</li>
+					<hr>
+					<input type="button" value="+" class="qtyPlus" field="quantity5">
+					<input type="text" name="quantity5" value="0" class="qty">
+					<input type="button" value="-" class="qtyMinus" field="quantity5">
+					<li id="fountain-menu">Pepsi</li>
+					<hr>
+					<input type="button" value="+" class="qtyPlus" field="quantity6">
+					<input type="text" name="quantity6" value="0" class="qty">
+					<input type="button" value="-" class="qtyMinus" field="quantity6">
+					<li id="fountain-menu">Orange Crush</li>
+					<hr>
+					<input type="button" value="+" class="qtyPlus" field="quantity7">
+					<input type="text" name="quantity7" value="0" class="qty">
+					<input type="button" value="-" class="qtyMinus" field="quantity7">
+					<li id="fountain-menu">Cream Soda</li>
+					<hr>
+					<input type="button" value="+" class="qtyPlus" field="quantity8">
+					<input type="text" name="quantity8" value="0" class="qty">
+					<input type="button" value="-" class="qtyMinus" field="quantity8">
+					<li id="fountain-menu">Canda Dry</li>
+					<hr>
+				</ul>
+			</li>
+			<li id="rightpanel">
+			<h2>Order Confirmation</h2>
+				<form action="ProgressPanel.html">
+				<button class= "confirm-button">Confirm Order </button>
+				</form>
+			</li>
+		</body>
+		</html>

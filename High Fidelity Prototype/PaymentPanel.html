@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Restaurant Ordering</title>
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="height=device-height; width=device-width; initial-scale=1; maximum-scale=1; user-scalable=no">
+</head>
+<body>
+	<div id="information">
+		<ul>
+			<li id="date"><a>Date</a></li>
+			<li id="employee"><a>Employee</a></li>
+			<li id="time"><a>Time</a></li>
+		</ul>
+	</div>
+	<div id="functions">
+		<ul>
+			<li><a href="../High Fidelity Prototype/TablesPanel.html">Tables</a></li>
+			<li><a href="../High Fidelity Prototype/MenuPanel.html">Menu</a></li>
+			<li id="selected"><a href="../High Fidelity Prototype/PaymentPanel.html">Payment</a></li>
+			<li><a href="../High Fidelity Prototype/ProgressPanel.html">Progress</a></li>
+			<li><a href="../High Fidelity Prototype/logInpage.html">Logout</a></li>
+		</ul>
+	</div>
+	<div id="panels">
+		<ul>
+			<li id="leftpanel">
+			<div id="activetables">
+				<ul>
+					<li><a href = "../High Fidelity Prototype/PaymentPanel1.html">1</a></li>
+					<li><a href = "../High Fidelity Prototype/PaymentPanel2.html">2</a></li>
+					<li><a href = "../High Fidelity Prototype/PaymentPanel11.html">3</a></li>
+					<li><a href = "../High Fidelity Prototype/PaymentPanel1.html">4</a></li>
+					</ul>
+				</div></li>
+
+			<li id="middlepanel">
+				<p style="text-align: center; font-weight: bolder; font-size: 30px;">Select a Table to display Bill</p>
+			</li>
+			<li id="rightpanel">
+				<div id ="Divide">
+				<ul>
+					<li><a href="../High Fidelity Prototype/PaymentPanel1.html">Total All</a></li>
+					<li><a onclick="selected(this, 'white')">Individual</a></li>
+					<br>
+					<hr id = "hr">
+					<br>
+					<li><a onclick="BankCard()" >CREDIT</a></li>
+					<li><a onclick="BankCard()" >DEBIT</a></li>
+					<li><a onclick="selected(this, 'white')">CASH</a></li>
+					<li><a onclick="BankCard()">GIFT CARD</a></li>
+					<hr id = "hr">
+					<li id = "receipt">PROMO CODE</li>
+				</ul></div>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

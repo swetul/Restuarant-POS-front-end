@@ -57,6 +57,9 @@ function addNewTable() {
 		
 		hideNewTablePanel();
 	}
+	if (currentTables.length >= 5) {
+		document.getElementById('addButton').style.visibility = 'hidden';
+	}
 }
 
 function selectTableOrder(inputElement) {

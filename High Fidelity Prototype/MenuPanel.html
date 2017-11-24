@@ -2,33 +2,61 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Restaurant Ordering</title>
-	<link rel="stylesheet" href="style.css">
 	<meta name="viewport" content="height=device-height; width=device-width; initial-scale=1; maximum-scale=1; user-scalable=no">
+	<title>Restaurant Ordering</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="plusminus.js"></script>
+	<link rel="stylesheet" href="style.css">
 </head>
-<body>
-	<div id="information">
-		<ul>
-			<li id="date"><a>Date</a></li>
-			<li id="employee"><a>Employee</a></li>
-			<li id="time"><a>Time</a></li>
-		</ul>
-	</div>
-	<div id="functions">
-		<ul>
-			<li><a href="../High Fidelity Prototype/TablesPanel.html">Tables</a></li>
-			<li id="selected"><a href="../High Fidelity Prototype/MenuPanel.html">Menu</a></li>
-			<li><a href="../High Fidelity Prototype/PaymentPanel.html">Payment</a></li>
-			<li><a href="../High Fidelity Prototype/ProgressPanel.html">Progress</a></li>
-			<li><a href="../High Fidelity Prototype/index.html">Logout</a></li>
-		</ul>
-	</div>
-	<div id="panels">
+	<body>
+		<div id="information">
 			<ul>
-				<li id="leftpanel"></li>
-				<li id="middlepanel"></li>
-				<li id="rightpanel"></li>
+				<li id="date"><a>Date</a></li>
+				<li id="employee"><a>Employee</a></li>
+				<li id="time"><a>Time</a></li>
 			</ul>
-	</div>
-</body>
+		</div>
+		<div id="functions">
+			<ul>
+				<li><a href="../High Fidelity Prototype/TablesPanel.html">Tables</a></li>
+				<li id="selected"><a href="../High Fidelity Prototype/MenuPanel.html">Menu</a></li>
+				<li><a href="../High Fidelity Prototype/PaymentPanel.html">Payment</a></li>
+				<li><a href="">Progress</a></li>
+				<li><a href="">Login</a></li>
+			</ul>
+		</div>
+			<div id="panels">
+			<ul>
+				<li id="leftpanel">
+					<h2>Categories</h2>
+					<div class = "menu-Buttons">
+						<form action="special.html">
+						<button class= "NavBar">Specials</a></button>
+						</form>
+						<form action="drinks.html">
+						<button class = "NavBar">Drinks</a></button>
+						</form>
+						<form action="appetizers.html">
+						<button class = "NavBar">Appetizers</a></button>
+						</form>
+						<form action="entrees.html">
+						<button class = "NavBar">Entrees</a></button>
+						</form>
+						<form action="deserts.html">
+						<button class = "NavBar">Deserts</a></button>
+						</form>
+					</div>
+				</li>
+				<li id="middlepanel">
+					<h2 style="text-align: center;">Click On the Categories Button<br>On Left Panel to get Started</h2>
+				</li>
+				<li id="rightpanel">
+					<h2>Order Confirmation</h2>
+					<form action="ProgressPanel.html">
+						<button class= "confirm-button">Confirm Order </button>
+					</form>
+				</li>
+			</ul>
+		</div>
+	</body>
 </html>

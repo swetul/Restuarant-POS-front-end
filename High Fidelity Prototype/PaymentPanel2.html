@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Restaurant Ordering</title>
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="height=device-height; width=device-width; initial-scale=1; maximum-scale=1; user-scalable=no">
+</head>
+<body>
+	<div id="information">
+		<ul>
+			<li id="date"><a>Date</a></li>
+			<li id="employee"><a>Employee</a></li>
+			<li id="time"><a>Time</a></li>
+		</ul>
+	</div>
+	<div id="functions">
+		<ul>
+			<li><a href="../High Fidelity Prototype/TablesPanel.html">Tables</a></li>
+			<li><a href="../High Fidelity Prototype/MenuPanel.html">Menu</a></li>
+			<li id="selected"><a href="../High Fidelity Prototype/PaymentPanel.html">Payment</a></li>
+			<li><a href="../High Fidelity Prototype/ProgressPanel.html">Progress</a></li>
+			<li><a href="../High Fidelity Prototype/index.html">Logout</a></li>
+		</ul>
+	</div>
+	<div id="panels">
+		<ul>
+			<li id="leftpanel">
+				<h2>Current Tables</h2>
+				<div id="activetables">
+					<ul>
+						<li><a href = "../High Fidelity Prototype/PaymentPanel1.html">1</a></li>
+						<li><a href = "../High Fidelity Prototype/PaymentPanel11.html">2</a></li>
+						<!--<li><a href = "../High Fidelity Prototype/PaymentPanel11.html">3</a></li>
+						<li><a href = "../High Fidelity Prototype/PaymentPanel1.html">4</a></li>-->
+					</ul>
+				</div>
+			</li>
+			<script>
+				function BankCard(){
+					document.getElementById('printHere').innerHTML = "PLEASE SWIPE OR INSERT CARD";
+					document.getElementById('receipt') = "PRINT RECEIPT";
+				}
+			</script>
+			<li id="middlepanel">
+				<h2>TABLE #2</h2>
+				<ul><li><p id = "payText">Panner Tikka Masala</p></li><li><p id = "Tablepay">2 x $12.00 = $24.00</p></li></ul>
+				<ul><li><p id = "payText">XL Cheese Pizza</p></li><li><p id = "Tablepay">1 x $12.00 = $12.00</p></li></ul>
+				<ul><li><p id = "payText">Vodka shots</p></li><li><p id = "Tablepay">4 x $04.00 = $16.00</p></li></ul>
+				<ul><li><p id = "payText">Hakka Noodles</p></li><li><p id = "Tablepay">2 x $08.00 = $16.00</p></li></ul>
+				<ul><li><p id = "payText">Indian Style fries</p></li><li><p id = "Tablepay">4 x $05.00 = $20.00</p></li></ul>
+				<ul><li><p id = "payText">Chocolate fudge cake</p></li><li><p id = "Tablepay">2 x $09.00 = $18.00</p></li></ul>
+				<ul><li><p id = "payText">Apple Pie</p></li><li><p id = "Tablepay">1 x $10.00 = $20.00</p></li></ul>
+				<ul><li><p id = "payText">Strawberry Brownies</p></li><li><p id = "Tablepay">2 x $07.00 = $14.00</p></li></ul>
+				<hr id = "hr">
+				<div id="subtotals">
+					<p>Pre-Tax Total = $140.00</p>
+					<p>PST&GST(%) = $12.56</p>
+				</div>
+				<hr id = "hr">
+				<div id="total">
+					<p>Table Total = $152.56</p>
+				</div>
+			</li>
+			<script>
+				function selected(elmnt, clr){
+					elmnt.style.background = clr;
+					document.getElementById('receipt') = "PRINT RECEIPT";
+				}
+			</script>
+			<li id="rightpanel">
+				<div id ="Divide">
+					<ul>
+						<li><a onclick="selected(this, 'white')">Total All</a></li>
+						<li><a onclick="selected(this, 'white')">Individual</a></li>
+						<li><hr id = "hr"></li>
+						<li><a onclick="BankCard()" >CREDIT</a></li>
+						<li><a onclick="BankCard()" >DEBIT</a></li>
+						<li><a onclick="selected(this, 'white')">CASH</a></li>
+						<li><a onclick="BankCard()">GIFT CARD</a></li>
+						<li><hr id = "hr"></li>
+						<li><p id = "printHere" style="text-align: center; font-weight: bolder"></p></li>
+						<li id = "receipt"><a>PROMO CODE</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

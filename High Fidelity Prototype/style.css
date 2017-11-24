@@ -52,8 +52,8 @@ body {
 
 #functions ul {
 	list-style: none;
-	border: 2px solid black;
-	background: black;
+	border: 2px solid green;
+	background: #999;
 	height: calc(10vh - 4px);
 	width: 100%;
 	padding: 0;
@@ -62,13 +62,10 @@ body {
 
 #functions li {
 	float: left;
-	/*border: 2px solid black;*/
+	border: 2px solid black;
 	margin: 0;
-	/*padding-left: 1px;
-	padding-right: 1px;*/
-	padding: 1px;
-	width: calc(20% - 2px);
-	height: calc(100% - 2px);
+	width: calc(20% - 4px);
+	height: calc(100% - 4px);
 }
 
 #functions a {
@@ -101,7 +98,7 @@ body {
 	list-style: none;
 	border: 2px solid black;
 	height: calc(85vh - 4px);
-	width: 100%;
+	width: 100% auto;
 	padding: 0;
 	margin: 0;
 }
@@ -112,10 +109,6 @@ body {
 	margin: 0;
 	width: calc(15% - 4px);
 	height: calc(100% - 4px);
-}
-
-#panels #leftpanel h2 {
-	text-align: center;
 }
 
 #panels #leftpanel #activetables ul {
@@ -130,14 +123,14 @@ body {
 	margin-right: auto;
 	margin-top: 15%;
 	margin-bottom: 15%;
-	width: 75px;
-	height: 75px;
-	/*height: calc(10% - 4px);*/
+	width: calc(10vh - 4px);
+	height: calc(10vh - 4px);
+/*	/height: calc(10% - 4px);*/
 }
 
 #panels #leftpanel #activetables a {
 	display: block;
-	line-height: 75px;
+	line-height: calc(10vh - 4px);
 	text-align: center;
 }
 
@@ -146,40 +139,26 @@ body {
 }
 
 #panels #middlepanel {
-	float: left;
 	border: 2px solid black;
+	float: left;
 	margin: 0;
 	width: calc(60% - 4px);
-	height: calc(100% - 4px);
-}
-
-#panels #middlepanel #newTableTitle {
-	visibility: hidden;
-	margin-left: 20px;
-}
-
-#panels #middlepanel #newTables {
-	visibility: hidden;
+	height:100%;
 }
 
 .wrapper {
-	display: grid;
-	margin-left: 20px;
-	margin-right: 20px;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-	grid-gap: 20px;
-	grid-auto-rows: minmax(10%, auto);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
 }
 
 .wrapper > div {
 	border: 2px solid black;
 	border-radius: 50%;
 	background-color: #eee;
-	height: 60px;
-	width: 60px;
-	margin-left: auto;
-	margin-right: auto;
-	line-height: 60px;
+	margin: 1em;
+	padding: 1em;
 	text-align: center;
 }
 
@@ -188,58 +167,11 @@ body {
 }
 
 #addtablepanel {
-	visibility: hidden;
 	border: 2px solid black;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 2vh;
-	margin-bottom: 2vh;
-	width: calc(90% - 4px);
+	width: calc(80% - 4px);
 	height: 200px;
-}
-
-#addtablepanel h2 {
-	margin-left: 20px;
-}
-
-#addtablepanel ul {
-	list-style: none;
-	border: none;
-	height: 0;
-}
-
-#addtablepanel li {
-	float: left;
-	border: 2px solid black;
-	width: calc(35% - 4px);
-	height: 50px;
-}
-
-#addtablepanel a {
-	text-decoration: none;
-	display: block;
-	line-height: 50px;
-	text-align: center;
-	background: #eee;
-	padding: 0 1em;
-}
-
-#addtablepanel #confirm {
-	margin-left: 10%;
-	margin-right: 5%;
-}
-
-#addtablepanel #confirm a:hover {
-	background: #ddf;
-}
-
-#addtablepanel #cancel {
-	margin-left: 5%;
-	margin-right: 10%;
-}
-
-#addtablepanel #cancel a:hover {
-	background: #ddf;
 }
 
 #panels #rightpanel {
@@ -251,6 +183,128 @@ body {
 	height: calc(100% - 4px);
 }
 
-#panels #rightpanel h2 {
+/**Pratik Css for Menu Panels*/
+.menu-Buttons .NavBar{
+	border-radius: 50%;
+	background-color: #595959;
+	color: white;
+	text-align: center;
+	line-height: 40px;
+	text-decoration: none;
+	display: block;
+	font-size: 16px;
+	cursor: pointer;
+	display: block;
+	margin: 4px 2px;
+	padding: 19px 3px;
+	width: 80%;
+	border: 1px solid black;
+	height: 100;
+	float: left;
+}
+
+.menu-Buttons .NavBar:not(last-child){
+	border-bottom: none;
+}
+
+.sticky{
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.drink-type{
+	overflow: hidden;
+	background-color: #333;
+}
+
+.drink-type a{
+
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	border-bottom: 3px solid transparent;
+}
+.drink-type a:hover{
+	border-bottom: 3px solid red;
+}
+
+#specialsHeading{
+	text-align: center;
+	font-weight: bold;
+	font-size: 25px;
+}
+ .specials-list{
+ 	border: none;
+ 	margin-top: 10px;
+ }
+
+ #chefSpecial{
+ 	display: inline-block;
+ 	position: relative;
+ 	padding: 12px;
+
+}
+
+input{
+	float: right;
+	padding: 5px;
+	width: 10%;
+	padding-left: 10px;
+	margin: 4px 2px;
 	text-align: center;
 }
+
+ #appetizers-menu{
+ 	padding: 8px;
+ }
+
+ #entrees-menu{
+ 	padding: 8px;
+ }
+ #deserts-menu{
+ 	padding: 8px;
+ }
+ #beers-menu{
+ 	padding: 8px;
+ }
+ #wines-menu{
+ 	padding: 8px;
+ }
+
+ #mixed-menu{
+ 	padding: 8px;
+ }
+
+ #fountain-menu{
+ 	padding: 8px;
+ }
+
+.confirm-button{
+	display: inline-block;
+	padding: 15px 45px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	margin: 10px;
+	color: #fff;
+	background-color: #4CAF50;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 8px #999;
+}
+
+.confirm-button:hover{
+	background-color: #3e8e41;
+}
+.confirm-button:active{
+	background-color: #3e8e41;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+/*****End Of Pratik Css File****/

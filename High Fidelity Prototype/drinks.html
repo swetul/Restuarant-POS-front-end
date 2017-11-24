@@ -2,14 +2,13 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="height=device-height; width=device-width; initial-scale=1; maximum-scale=1; user-scalable=no">
 	<title>Restaurant Ordering</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script type="text/javascript" src="plusminus.js"></script>
 	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="height=device-height; width=device-width; initial-scale=1; maximum-scale=1; user-scalable=no">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="drinksnavigation.js"></script>
 </head>
 <body>
-
 	<div id="information">
 		<ul>
 			<li id="date"><a>Date</a></li>
@@ -29,8 +28,8 @@
 		<div id="panels">
 		<ul>
 			<li id="leftpanel">
+			<h2 style="text-align: center;"> Categories</h2>
 				<div class = "menu-Buttons">
-					<h2 style="text-align: center;"><strong> Categories </strong></h2>
 					<form action="special.html">
 					<button class= "NavBar">Specials</a></button>
 					</form>
@@ -49,13 +48,14 @@
 				</div>
 			</li>
 			<li id="middlepanel">
-			<p>Click On the Categories Button On the Left Panel to get Started </p>
-			<li id="rightpanel">
-			<h2>Order Confirmation</h2>
-				<form action="ProgressPanel.html">
-				<button class= "confirm-button">Confirm Order </button>
-				</form>
+				<div class="drink-type" id="myTopNav">
+					<a href="fountain.html">Fountain</a>
+					<a href="mixed.html">Mixed</a>
+					<a href="wine.html" >Wine</a>
+					<a href="beer.html">Beer</a>
+				</div>
+				<p> Please Click On the Above Bar to Get Started</p>
 			</li>
-		</div>
+			<li id="rightpanel"></li>
 		</body>
 		</html>

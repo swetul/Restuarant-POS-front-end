@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="height=device-height; width=device-width; initial-scale=1; maximum-scale=1; user-scalable=no">
+	<title>Restaurant Ordering</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="plusminus.js"></script>
+	<link rel="stylesheet" href="style.css">
+	
+</head>
+<body>
+
+	<div id="information">
+		<ul>
+			<li id="date"><a>Date</a></li>
+			<li id="employee"><a>Employee</a></li>
+			<li id="time"><a>Time</a></li>
+		</ul>
+	</div>
+	<div id="functions">
+		<ul>
+			<li><a href="../High Fidelity Prototype/TablesPanel.html">Tables</a></li>
+			<li id="selected"><a href="../High Fidelity Prototype/MenuPanel.html">Menu</a></li>
+			<li><a href="../High Fidelity Prototype/PaymentPanel.html">Payment</a></li>
+			<li><a href="">Progress</a></li>
+			<li><a href="">Login</a></li>
+		</ul>
+	</div>
+		<div id="panels">
+		<ul>
+			<li id="leftpanel">
+			<h2 style="text-align: center;"><strong> Categories </strong></h2>
+				<div class = "menu-Buttons">
+					
+					<form action="special.html">
+					<button class= "NavBar">Specials</a></button>
+					</form>
+					<form action="drinks.html">
+					<button class = "NavBar">Drinks</a></button>
+					</form>
+					<form action="appetizers.html">
+					<button class = "NavBar">Appetizers</a></button>
+					</form>
+					<form action="entrees.html">
+					<button class = "NavBar">Entrees</a></button>
+					</form>
+					<form action="deserts.html">
+					<button class = "NavBar">Deserts</a></button>
+					</form>
+				</div>
+			</li>
+			<li id="middlepanel">
+				<h2 style="text-align: center;">Appetizers</h2>
+				<div class = "appetizers-list">
+				<ul style="border: none">
+					<input type="button" value="+" class="qtyPlus" field="quantity1">
+					<input type="text" name="quantity1" value="0" class="qty">
+					<input type="button" value="-" class="qtyMinus" field="quantity1">
+					<li id="appetizers-menu"> Garlic Bread</li>	
+					<hr>
+					<input type="button" value="+" class="qtyPlus" field="quantity2">
+					<input type="text" name="quantity2" value="0" class="qty">
+					<input type="button" value="-" class="qtyMinus" field="quantity2">	
+					<li id="appetizers-menu"> Breaded Mozza Sticks</li>
+					<hr>
+					<input type="button" value="+" class="qtyPlus" field="quantity3">
+					<input type="text" name="quantity3" value="0" class="qty">
+					<input type="button" value="-" class="qtyMinus" field="quantity3">	
+					<li id="appetizers-menu">Coconut Shrimp</li>
+					<hr>
+					<input type="button" value="+" class="qtyPlus" field="quantity4">
+					<input type="text" name="quantity4" value="0" class="qty">
+					<input type="button" value="-" class="qtyMinus" field="quantity4">
+					<li id="appetizers-menu">Nacho Platter</li>
+					<hr>
+					<input type="button" value="+" class="qtyPlus" field="quantity5">
+					<input type="text" name="quantity5" value="0" class="qty">
+					<input type="button" value="-" class="qtyMinus" field="quantity5">
+					<li id="appetizers-menu">Warm Spinach Dip</li>
+					<hr>
+					<input type="button" value="+" class="qtyPlus" field="quantity6">
+					<input type="text" name="quantity6" value="0" class="qty">
+					<input type="button" value="-" class="qtyMinus" field="quantity6">
+					<li id="appetizers-menu">Crispy Mashed Potatoes</li>
+					<hr>
+					<input type="button" value="+" class="qtyPlus" field="quantity7">
+					<input type="text" name="quantity7" value="0" class="qty">
+					<input type="button" value="-" class="qtyMinus" field="quantity7">
+					<li id="appetizers-menu">Cheese Toast</li>
+					<hr>
+					<input type="button" value="+" class="qtyPlus" field="quantity8">
+					<input type="text" name="quantity8" value="0" class="qty">
+					<input type="button" value="-" class="qtyMinus" field="quantity8">
+					<li id="appetizers-menu">Pita Bread</li>
+					<hr>
+					<input type="button" value="+" class="qtyPlus" field="quantity9">
+					<input type="text" name="quantity9" value="0" class="qty">
+					<input type="button" value="-" class="qtyMinus" field="quantity9">
+					<li id="appetizers-menu">Onion Rings</li>
+					<hr>
+				</ul>
+				</div>
+			</li>
+
+			<li id="rightpanel">
+			<h2>Order Confirmation</h2>
+				<form action="ProgressPanel.html">
+				<button class= "confirm-button">Confirm Order </button>
+				</form>
+			</li>
+		</body>
+		</html>

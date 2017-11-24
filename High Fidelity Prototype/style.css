@@ -335,7 +335,7 @@ input {
 	height: 0;
 }
 
-#middlepanel li {
+#middlepanel #listofitems li {
 	height: 20px;
 	width: calc(100% - 4px);
 }
@@ -575,6 +575,7 @@ input {
 	float: left;
 	border: none;
 	height: 50px;
+	width: calc(50% - 4px);
 }
 
 #addtablepanel a {
@@ -587,7 +588,7 @@ input {
 	padding: 0 1em;
 	margin-left: auto;
 	margin-right: auto;
-	width: calc(50% - 4px);
+	width: 50%;
 }
 
 #addtablepanel a:hover {

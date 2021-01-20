@@ -1,4 +1,4 @@
-# Human-Computer interaction Project
+# Human-Computer Interaction (HCI) Project
 
 ## Objective
 Conduct research to collect data using various data collection techniques that can provide some insight on what visual and functional factors are neccessary and useful for making a web-based POS system for any type of restuarant.
